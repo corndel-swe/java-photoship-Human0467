@@ -73,9 +73,14 @@ public class Pixels {
      */
     public static List<Integer> grayscale(List<Integer> rgb) {
         // Calculate the average of the red, green, and blue values
-
+        int sum = 0;
+        for (int val : rgb) {
+            sum += val;
+        }
+        int averageVal = sum / rgb.size();
         // Set all components to the average value to create a grayscale effect
-        return null;
+        rgb = rgb.stream().map(x -> averageVal).toList();
+        return rgb;
     }
 
     /**
