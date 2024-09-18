@@ -18,11 +18,7 @@ public class Exercise2b {
    */
   public static List<Double> convertFilesizes(List<Double> files) {
     List<Double> filesMB = new ArrayList<Double>();
-//    System.out.println(files.size());
-//    System.out.println(files);
       for (int i = 0; i < files.size(); i++) {
-//        System.out.println(i);
-//        System.out.println(files.get(i));
         filesMB.add(i, files.get(i) / 1000);
     }
     return filesMB;
