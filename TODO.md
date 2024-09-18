@@ -12,7 +12,7 @@
 
 - [x] Complete `invert()`
 
-- [ ] Complete `grayScale()`
+- [x] Complete `grayScale()`
 
 - [ ] Complete `blackAndWhite()`
 

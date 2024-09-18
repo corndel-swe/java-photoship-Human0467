@@ -96,11 +96,20 @@ public class Pixels {
      */
     public static List<Integer> blackAndWhite(List<Integer> rgb) {
         // Calculate the average of the red, green, and blue values
-
+        int sum = 0;
+        for (int val : rgb) {
+            sum += val;
+        }
+        int averageVal = sum / rgb.size();
         // If the average is below 128, set all values to 0 (black); otherwise, set them
         // to 255 (white)
-        return null;
+        if (averageVal < 128) {
+            return rgb.stream().map(x -> 0).toList();
+        } else {
+            return rgb.stream().map(x -> 255).toList();
+        }
     }
+
 
     /**
      * Isolates a specific color channel (red, green, or blue).
