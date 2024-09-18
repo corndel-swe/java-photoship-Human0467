@@ -6,21 +6,21 @@
 
 ## High priority
 
-- [ ] Complete `stripGreen()`
+- [x] Complete `stripGreen()`
 
-- [ ] Complete `stripBlue()`
+- [x] Complete `stripBlue()`
 
-- [ ] Complete `invert()`
+- [x] Complete `invert()`
 
-- [ ] Complete `grayScale()`
+- [x] Complete `grayScale()`
 
-- [ ] Complete `blackAndWhite()`
+- [x] Complete `blackAndWhite()`
 
-- [ ] Complete `colorChannel()`
+- [x] Complete `colorChannel()`
 
-- [ ] Complete `sepia()`
+- [x] Complete `sepia()`
 
-- [ ] Complete `adjustBrightness()`
+- [x] Complete `adjustBrightness()`
 
 ## Backlog
 

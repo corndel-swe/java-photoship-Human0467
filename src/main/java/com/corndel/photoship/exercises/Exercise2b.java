@@ -1,6 +1,8 @@
 package com.corndel.photoship.exercises;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Exercise2b {
   // https://tech-docs.corndel.com/java/map-filter.html#map-and-filter-with-arrays
@@ -16,7 +18,15 @@ public class Exercise2b {
    * @returns {double[]} The list in MB
    */
   public static List<Double> convertFilesizes(List<Double> files) {
-    // TODO
-    return null;
+//    List<Double> filesMB = new ArrayList<Double>();
+//      for (int i = 0; i < files.size(); i++) {
+//        filesMB.add(i, files.get(i) / 1000);
+//    }
+//    return filesMB;
+
+    //alternative!!
+    return files.stream().map(x -> x/1000).collect(Collectors.toList());
   }
+
+
 }
