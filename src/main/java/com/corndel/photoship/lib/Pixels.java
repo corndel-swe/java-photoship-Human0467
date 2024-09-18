@@ -180,9 +180,17 @@ public class Pixels {
      */
     public static List<Integer> adjustBrightness(List<Integer> rgb, int brightness) {
         // Adjust the red, green, and blue values and clamp them between 0 and 255
-
+        for (int i = 0; i < rgb.size(); i++) {
+            if ((rgb.get(i) + brightness) > 255) {
+                rgb.set(i, 255);
+            } else if ((rgb.get(i) + brightness) < 0) {
+                rgb.set(i, 0);
+            } else {
+                rgb.set(i, rgb.get(i) + brightness);
+            }
+        }
+        System.out.println(rgb);
         // Update the RGB list with the new brightness-adjusted values
-
-        return null;
+        return rgb;
     }
 }
