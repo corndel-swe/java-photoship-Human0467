@@ -1,5 +1,6 @@
 package com.corndel.photoship.exercises;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Exercise2b {
@@ -16,7 +17,14 @@ public class Exercise2b {
    * @returns {double[]} The list in MB
    */
   public static List<Double> convertFilesizes(List<Double> files) {
-    // TODO
-    return null;
+    List<Double> filesMB = new ArrayList<Double>();
+//    System.out.println(files.size());
+//    System.out.println(files);
+      for (int i = 0; i < files.size(); i++) {
+//        System.out.println(i);
+//        System.out.println(files.get(i));
+        filesMB.add(i, files.get(i) / 1000);
+    }
+    return filesMB;
   }
 }
