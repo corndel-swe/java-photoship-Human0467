@@ -1,5 +1,6 @@
 package com.corndel.photoship.exercises;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Exercise1b {
@@ -15,7 +16,8 @@ public class Exercise1b {
    * @returns {List<T>} The list with the last element at the front
    */
   public static <T> List<T> arrayRotate(List<T> list) {
-    // TODO
-    return null;
+    list.addFirst(list.getLast());
+    list.removeLast();
+    return list;
   }
 }
