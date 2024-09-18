@@ -189,7 +189,6 @@ public class Pixels {
                 rgb.set(i, rgb.get(i) + brightness);
             }
         }
-        System.out.println(rgb);
         // Update the RGB list with the new brightness-adjusted values
         return rgb;
     }
