@@ -158,9 +158,9 @@ public class Pixels {
         green = (0.349 * red) + (0.686 * green) + (0.168 * blue);
         blue = (0.272 * red) + (0.534 * green) + (0.131 * blue);
         // Update the RGB list with the new sepia values
-        rgb.set(0, (int) red);
-        rgb.set(1, (int) green);
-        rgb.set(2, (int) blue);
+        rgb.set(0, Math.min((int) red, 255));
+        rgb.set(1, Math.min((int) green, 255));
+        rgb.set(2, Math.min((int) blue, 255));
         return rgb;
     }
 
