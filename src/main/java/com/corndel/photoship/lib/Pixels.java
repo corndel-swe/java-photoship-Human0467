@@ -123,8 +123,16 @@ public class Pixels {
      * @return The RGB list with only the specified color channel.
      */
     public static List<Integer> colorChannel(List<Integer> rgb, char color) {
-        // TODO
-        return null;
+        if (!(color == 'r')) {
+            rgb = Pixels.stripRed(rgb);
+        }
+        if (!(color == 'b')) {
+            rgb = Pixels.stripBlue(rgb);
+        }
+        if (!(color == 'g')) {
+            rgb = Pixels.stripGreen(rgb);
+        }
+        return rgb;
     }
 
     /**

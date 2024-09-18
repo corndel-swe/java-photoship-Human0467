@@ -14,9 +14,9 @@
 
 - [x] Complete `grayScale()`
 
-- [ ] Complete `blackAndWhite()`
+- [x] Complete `blackAndWhite()`
 
-- [ ] Complete `colorChannel()`
+- [x] Complete `colorChannel()`
 
 - [ ] Complete `sepia()`
 
