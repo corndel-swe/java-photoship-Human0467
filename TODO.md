@@ -18,9 +18,9 @@
 
 - [x] Complete `colorChannel()`
 
-- [ ] Complete `sepia()`
+- [x] Complete `sepia()`
 
-- [ ] Complete `adjustBrightness()`
+- [x] Complete `adjustBrightness()`
 
 ## Backlog
 
