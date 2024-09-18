@@ -79,8 +79,7 @@ public class Pixels {
         }
         int averageVal = sum / rgb.size();
         // Set all components to the average value to create a grayscale effect
-        rgb = rgb.stream().map(x -> averageVal).toList();
-        return rgb;
+        return rgb.stream().map(x -> averageVal).toList();
     }
 
     /**
